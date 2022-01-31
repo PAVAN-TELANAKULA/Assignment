@@ -1,17 +1,20 @@
 package com.uks.core.day8;
 
-public class MainThread
-{
-	public static void main(String[] args) throws InterruptedException
-	{
-		ThreadDemo1 d1 = new ThreadDemo1();
+public class MainThread {
+	public static void main(String[] args) throws InterruptedException {
 
-		d1.printNumbers(5000);
+		ThreadDemo1 threadDemo1 = new ThreadDemo1();
 
-		Runnable r = new ThreadDemo2();
+		Runnable runnable = new ThreadDemo2();
+		Thread thread = new Thread(runnable);
 
-		Thread d2 = new Thread(r);
-
-		d2.start();
+		synchronized (threadDemo1) {
+			threadDemo1.wait(100);
+			threadDemo1.start();
+		}
+		synchronized (thread) {
+			thread.wait(100);
+			thread.start();
+		}
 	}
 }
