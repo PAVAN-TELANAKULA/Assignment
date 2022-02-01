@@ -9,7 +9,6 @@ public class ThreadDemo2 implements Runnable{
 			if (i%75 == 0){
 				try {
 					Thread.sleep(200);
-					//this.notifyAll();
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

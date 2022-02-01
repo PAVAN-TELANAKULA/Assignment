@@ -8,13 +8,8 @@ public class MainThread {
 		Runnable runnable = new ThreadDemo2();
 		Thread thread = new Thread(runnable);
 
-		synchronized (threadDemo1) {
-			threadDemo1.wait(100);
 			threadDemo1.start();
-		}
-		synchronized (thread) {
-			thread.wait(100);
 			thread.start();
 		}
 	}
-}
+

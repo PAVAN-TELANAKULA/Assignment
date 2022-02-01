@@ -9,7 +9,6 @@ public class ThreadDemo1 extends Thread{
 			if(i%50 == 0){
 				try {
 					Thread.sleep(100);
-					//this.notifyAll();
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
