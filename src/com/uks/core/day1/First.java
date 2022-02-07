@@ -1,6 +1,5 @@
 package com.uks.core.day1;
 
-import java.util.Scanner;
 public class First {
     Hello sc = new Hello();
 

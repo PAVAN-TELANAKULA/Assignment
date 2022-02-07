@@ -1,0 +1,4 @@
+1,Pavan Telanakula,Sri Sai Lakshmi Apartment Labbipet,Vijayawada,50000,9381432442
+2,Alex Paul,Duplex Apartment Sri nagar,vishakapatnam,48000,9934627893
+3,Karthik pachigola,Gold Apartment ,Bhimavaram,45000,7986541230
+4,Ganesh karicherla,Daimond Apartment,Thanuku,55000,7367559981
